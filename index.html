@@ -183,48 +183,6 @@ Jeremy
   </nav>
 </section>
 
-<style>
-  .subscribe-message {
-    display: block;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 20px;
-    max-width:462px;
-    margin:0 auto;
-    border-radius:4px;
-          
-    /* animation */
-    -webkit-transform:scale(0);
-    transform:scale(0);
-    opacity:0;
-    max-height:0;
-    padding:0;
-    border-width:0;
-    
-    -webkit-transition:0.5s;
-    transition:0.5s;
-  }
-  .subscribe-message a { font-weight:600; }
-  .subscribe-message.valid,
-  .subscribe-message.error {
-    -webkit-transform:scale(1);
-    transform:scale(1);
-    max-height:132px;
-    opacity:1;
-    padding:14px 20px;
-    border:2px solid;
-    margin-top: 20px;
-  }
-</style>
-
-<script src="http://cdn.rawgit.com/scdoshi/jquery-ajaxchimp/master/jquery.ajaxchimp.min.js"></script>
-<script>
-  $(function(){
-    $('#subscribe').ajaxChimp({
-      url: '//weAdventure.us13.list-manage.com/subscribe/post?u=f0fa54fcf3fffbdf547102013&amp;id=f2e12f3ca0'
-    });
-  });
-</script>
-
 <section class="slide whiteSlide autoHeight">
   <div class="content">
     <div class="container">
@@ -238,7 +196,7 @@ Jeremy
               <div>
                 <form id="subscribe">
                   <input type="email" value="" name="subscribe-email" id="subscribe-email" placeholder="Your e-mail" class="rounded input-38 ae-5 fromLeft"/>
-                  <input type="submit" value="get access" name="subscribe-submit" class="button green uppercase round ae-5 fromRight"/>
+                  <input type="submit" value="closed" name="subscribe-submit" class="button red uppercase round ae-5 fromRight"/>
                   <label for="subscribe-email" class="subscribe-message"></label>
                 </form>
               </div>
